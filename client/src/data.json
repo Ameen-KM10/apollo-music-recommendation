@@ -1,0 +1,11 @@
+{
+    "name": [
+        "ameen",
+        "ameen2",
+        "ameen3"
+    ],
+    "features": [
+        "mood prediction",
+        "song recommendation"
+    ]
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+    .animation-delay-4000 {
+      animation-delay: 4s;
+    }
+  }
+
+
+.radio-input input {
+  display: none;
+}
+
+.radio-input {
+  --container_width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: #000000;
+  width: var(--container_width);
+  overflow: hidden;
+  border: 1px solid rgba(53, 52, 52, 0.226);
+}
+
+.radio-input label {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-weight: 600;
+  letter-spacing: -1px;
+  font-size: 14px;
+}
+
+.selection {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 60px;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  transition: .15s ease;
+}
+
+.radio-input label:has(input:checked) {
+  color: #fff;
+}
+
+/* .radio-input label:has(input:checked) ~ .selection {
+  
+} */
+
+.radio-input label:nth-child(1):has(input:checked) ~ .selection {
+  transform: translateX(0);
+  background-color: rgb(11 117 223);
+  display: inline-block;
+  color: #fff;
+}
+
+.radio-input label:nth-child(2):has(input:checked) ~ .selection {
+  transform: translateX(60px);
+  background-color: rgb(11 117 223);
+  display: inline-block;
+  color: #fff;
+}
+
+.radio-input label:nth-child(3):has(input:checked) ~ .selection {
+  transform: translateX(120px);
+  background-color: rgb(11 117 223);
+  display: inline-block;
+  color: #fff;
+}
+
+.radio-input label:nth-child(4):has(input:checked) ~ .selection {
+  transform: translateX(180px);
+  background-color: rgb(11 117 223);
+  display: inline-block;
+  color: #fff;
+}
+.radio-input label:nth-child(5):has(input:checked) ~ .selection {
+  transform: translateX(240px);
+  background-color: rgb(11 117 223);
+  display: inline-block;
+  color: #fff;
+}
+
+
+
+
+.radio-input1 input {
+  display: none;
+}
+
+.radio-input1 {
+  --container_width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: #000000;
+  width: var(--container_width);
+  overflow: hidden;
+  border: 1px solid rgba(53, 52, 52, 0.226);
+}
+
+.radio-input1 label {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-weight: 600;
+  letter-spacing: -1px;
+  font-size: 14px;
+}
+
+.selection1 {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 60px;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  transition: .15s ease;
+}
+
+.radio-input1 label:has(input:checked) {
+  color: #fff;
+}
+
+/* .radio-input label:has(input:checked) ~ .selection {
+  
+} */
+
+.radio-input1 label:nth-child(1):has(input:checked) ~ .selection1 {
+  transform: translateX(0);
+  background-color: rgb(11 117 223);
+  display: inline-block;
+  color: #fff;
+}
+
+.radio-input1 label:nth-child(2):has(input:checked) ~ .selection1 {
+  transform: translateX(60px);
+  background-color: rgb(11 117 223);
+  display: inline-block;
+  color: #fff;
+}
+
+.radio-input1 label:nth-child(3):has(input:checked) ~ .selection1 {
+  transform: translateX(120px);
+  background-color: rgb(11 117 223);
+  display: inline-block;
+  color: #fff;
+}
+
+.radio-input1 label:nth-child(4):has(input:checked) ~ .selection1 {
+  transform: translateX(180px);
+  background-color: rgb(11 117 223);
+  display: inline-block;
+  color: #fff;
+}
+.radio-input1 label:nth-child(5):has(input:checked) ~ .selection1 {
+  transform: translateX(240px);
+  background-color: rgb(11 117 223);
+  display: inline-block;
+  color: #fff;
+}
